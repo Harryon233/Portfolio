@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/Logopi.png" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="ion"><ion-icon name="close-circle" onclick="closemenu()"></ion-icon></i>
+                </ul>
+                <i class="ion"><ion-icon name="menu" onclick="openmenu()"></ion-icon></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Harry</span> <br>Son From Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore commodi aspernatur possimus non aperiam molestias atque, facilis suscipit tenetur blanditiis perspiciatis animi nulla quidem nesciunt ratione ipsa sit laudantium.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institution</li>
+                            <li><span>2017 - 2021</span><br>Team Lead at StarApp LLC.</li>
+                            <li><span>2015 - 2017</span><br>UI/UX Design Excutive at Coin Digital LTD </li>
+                            <li><span>2014 -2015</span><br>Internship at ekart eCommerce. </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2015</span><br>Designing Web/App Interfaces</li>
+                            <li><span>2015</span><br>MBA from MIT Bangalore</li>
+                            <li><span>2013</span><br>BBA from ISM Bangalore.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class=""><ion-icon name="code-slash-outline"></ion-icon></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui excepturi quo ducimus labore magni numquam, sunt, veritatis dolorum veniam corporis laudantium eveniet, nulla tempore quod quibusdam error est distinctio. Alias.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class=""><ion-icon name="crop-outline"></ion-icon></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui excepturi quo ducimus labore magni numquam, sunt, veritatis dolorum veniam corporis laudantium eveniet, nulla tempore quod quibusdam error est distinctio. Alias.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class=""><ion-icon name="logo-apple-appstore"></ion-icon></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui excepturi quo ducimus labore magni numquam, sunt, veritatis dolorum veniam corporis laudantium eveniet, nulla tempore quod quibusdam error est distinctio. Alias.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store or app store</p>
+                        <a href="#"><ion-icon name="link"></ion-icon></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store or app store</p>
+                        <a href="#"><ion-icon name="link"></ion-icon></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store or app store</p>
+                        <a href="#"><ion-icon name="link"></ion-icon></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i><ion-icon name="paper-plane"></ion-icon></i> contact@exmaple.com</p>
+                    <p><i><ion-icon name="call"></ion-icon></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" class="blue"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://instagram.com/" class="purple"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://twitter.com/" class="lightblue"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://linkedin.com/" class="darkblue"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://wa.me" class="green"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    </div>
+                    <a href="image/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Harry. Made with <i><ion-icon name="heart"></ion-icon></i> by HarrizoN</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+    }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const msg = document.getElementById("msg")
+
+        form.addEventListener( 'submit', e => {
+            e.preventDefault()
+              .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+              })
+        })
+    </script>
+</body>
+</html>
